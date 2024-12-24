@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.mobile,
+.tablet,
+.laptop,
+.desktop,
+.tv {
+  background-color: lightcoral;
+}
+
+/* 480 px არ გაცდება, ანუ მაქსიმალური სისქე იქნება 480px */
+@media (max-width: 480px) {
+  .mobile {
+    background-color: lightgray;
+  }
+}
+
+/* მინიმალური სისქე :481 და მაქსიმალური სისქე 768 */
+@media (min-width: 481px) and (max-width: 768px) {
+  .tablet {
+    background-color: lightblue;
+  }
+}
+
+/* მინიმალური სისქე :769px და მაქსიმალური სისქე 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .laptop {
+    background-color: lightgreen;
+  }
+}
+
+/* მინიმალური სისქე :769px და მაქსიმალური სისქე 1024px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .desktop {
+    background-color: gold;
+  }
+}
+
+@media (min-width: 1201px) {
+  .tv {
+    background-color: lightseagreen;
+  }
+}
